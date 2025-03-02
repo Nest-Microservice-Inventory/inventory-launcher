@@ -53,3 +53,15 @@ $   npm i class-validator class-transformer
 ```bash
 $   nest g res <nombre> --no-spec
 ```
+
+## Crear imagen y subir a Docker Hub
+
+1. Creacion de la imagen independiente
+```bash
+$   docker build -t <usuario>/<nombre-imagen> .
+```
+
+2. Subir a repositorio de Docker Hub
+```bash
+$   docker push <usuario>/<nombre-imagen>:tagname
+```
